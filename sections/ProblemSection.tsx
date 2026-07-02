@@ -10,6 +10,7 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 import { PROBLEMS } from '@/constants/product';
 import { staggerContainer, fadeInUp } from '@/utils/motion';
 import { cn } from '@/utils/cn';
+import Image from 'next/image';
 
 const getBentoClasses = (index: number) => {
   switch (index) {
@@ -64,18 +65,12 @@ export function ProblemSection() {
                 {/* Large Background Image or Icon */}
                 {isLarge ? (
                   <>
-                    <img 
+                    <Image 
                       src="/images/problem-main.jpg" 
                       alt={problem.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        if (target.src.includes('.webp')) {
-                          target.src = '/images/problem-main.png';
-                        } else if (target.src.includes('.png')) {
-                          target.src = '/images/problem-main.jpg';
-                        }
-                      }}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
                   </>

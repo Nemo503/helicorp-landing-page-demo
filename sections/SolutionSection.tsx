@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 import { fadeInUp, staggerContainer, staggerItem } from '@/utils/motion';
 import { cn } from '@/utils/cn';
+import Image from 'next/image';
 
 export function SolutionSection() {
   return (
@@ -65,11 +66,12 @@ export function SolutionSection() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-primary/20 dark:bg-primary/10 blur-[80px] rounded-full pointer-events-none" />
             
             <div className="relative aspect-square lg:aspect-[4/5] flex items-center justify-center group">
-              <img
+              <Image
                 src="/images/feature-auto.webp"
                 alt="Tự động làm sạch"
-                className="w-full h-full object-cover relative z-10 [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)] dark:[mask-image:radial-gradient(ellipse_at_center,black_60%,transparent_100%)] transition-transform duration-1000 group-hover:scale-105"
-                loading="lazy"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover relative z-10 [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)] dark:[mask-image:radial-gradient(ellipse_at_center,black_60%,transparent_100%)] transition-transform duration-1000 group-hover:scale-105"
               />
               
               {/* Floating Badge */}

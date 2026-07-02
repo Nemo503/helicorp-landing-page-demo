@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { fadeInUp, staggerContainer } from '@/utils/motion';
 import { cn } from '@/utils/cn';
+import Image from 'next/image';
 
 interface BentoCardProps {
   srcBase: string;
@@ -37,12 +38,13 @@ const BentoCard = ({ srcBase, alt, title, desc, className, imageClassName }: Ben
       variants={fadeInUp} 
       className={cn("relative rounded-3xl overflow-hidden bg-gray-100 dark:bg-[#161618] border border-border dark:border-white/5 group h-[350px] lg:h-[400px]", className)}
     >
-      <img 
+      <Image 
         src={imgSrc} 
         alt={alt} 
-        className={cn("absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700", imageClassName)} 
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className={cn("object-cover group-hover:scale-105 transition-transform duration-700", imageClassName)} 
         onError={handleImageError}
-        loading="lazy"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-full p-6 lg:p-8">

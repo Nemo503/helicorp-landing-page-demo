@@ -12,6 +12,7 @@ import { HERO_CONTENT } from '@/constants/site';
 import { fadeInUp, fadeIn } from '@/utils/motion';
 import { trackEvent } from '@/lib/analytics';
 import { cn } from '@/utils/cn';
+import Image from 'next/image';
 
 export function HeroSection() {
   function handleCtaClick(label: string) {
@@ -138,11 +139,14 @@ export function HeroSection() {
               {/* Soft radial glow tightly behind the product */}
               <div className="absolute inset-0 bg-primary/15 dark:bg-primary/20 rounded-full blur-[70px] scale-90" aria-hidden="true" />
               
-              <img
+              <Image
                 src="/images/1.png"
                 alt="HeLiPet Open Top Pro Plus — Máy dọn vệ sinh mèo tự động"
                 className="relative z-10 w-full h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] scale-100 lg:scale-125 origin-center"
-                loading="eager"
+                priority
+                width={850}
+                height={850}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 850px"
               />
 
               {/* Floating Badges */}
