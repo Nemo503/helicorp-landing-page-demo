@@ -78,7 +78,7 @@ export function ProductShowcaseSection() {
             alt="Không gian mở rộng"
             title="Không gian mở rộng"
             desc="Thiết kế Open Top không trần, giúp mèo lớn xoay người thoải mái mà không bị bí bách."
-            imageClassName="scale-[1.05] group-hover:scale-[1.1]"
+            imageClassName="scale-[1.6] md:scale-[1.05] group-hover:scale-[1.65] md:group-hover:scale-[1.1]"
           />
 
           <BentoCard
@@ -86,7 +86,7 @@ export function ProductShowcaseSection() {
             alt="Cảm biến 360°"
             title="Cảm biến 360°"
             desc="Nhận diện chuyển động tức thì. Lồng xoay tự động dừng khi phát hiện mèo tới gần."
-            imageClassName="scale-[1.3] group-hover:scale-[1.35]"
+            imageClassName="scale-[1.8] md:scale-[1.3] group-hover:scale-[1.85] md:group-hover:scale-[1.35]"
           />
 
           <BentoCard
