@@ -6,7 +6,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowUp, MapPin, Phone, Mail } from 'lucide-react';
+import { ArrowUp, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { cn } from '@/utils/cn';
 import { fadeInUp, staggerContainer, staggerItem } from '@/utils/motion';
 import { FOOTER_LINKS, FOOTER_CONTACT, SOCIAL_LINKS, SITE_CONFIG } from '@/constants/site';
@@ -112,6 +112,10 @@ export function Footer() {
             <span className="flex items-center gap-2">
               <MapPin className="w-4 h-4 flex-shrink-0" />
               {FOOTER_CONTACT.address}
+            </span>
+            <span className="flex items-center gap-2">
+              <Clock className="w-4 h-4 flex-shrink-0" />
+              {FOOTER_CONTACT.hours}
             </span>
           </div>
         </motion.div>

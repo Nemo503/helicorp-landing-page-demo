@@ -98,9 +98,10 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
 ];
 
 export const FOOTER_CONTACT = {
-  phone: '1900 6868',
-  email: 'support@helipet.vn',
-  address: 'Tầng 12, Tòa nhà ABC, Quận 1, TP. Hồ Chí Minh',
+  phone: '0965255227',
+  email: 'support@helicorp.vn',
+  address: 'M2 đường F, Phường Đông Hưng Thuận, HCM',
+  hours: '8:00 - 20:00 từ T2 - CN',
 } as const;
 
 /* --------------------------------

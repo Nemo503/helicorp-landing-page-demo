@@ -19,12 +19,13 @@ interface BentoCardProps {
   desc: string;
   className?: string;
   imageClassName?: string;
+  ext?: string;
 }
 
-const BentoCard = ({ srcBase, alt, title, desc, className, imageClassName }: BentoCardProps) => {
-  const [imgSrc, setImgSrc] = useState(`${srcBase}.webp`);
+const BentoCard = ({ srcBase, alt, title, desc, className, imageClassName, ext = '.webp' }: BentoCardProps) => {
+  const [imgSrc, setImgSrc] = useState(`${srcBase}${ext}`);
   const [errorCount, setErrorCount] = useState(0);
-  const extensions = ['.png', '.jpg', '.jpeg'];
+  const extensions = ['.png', '.jpg', '.jpeg', '.webp'].filter(e => e !== ext);
 
   const handleImageError = () => {
     if (errorCount < extensions.length) {
@@ -90,10 +91,11 @@ export function ProductShowcaseSection() {
 
           <BentoCard
             srcBase="/images/showcase-3"
+            ext=".jpg"
             alt="Thảm lót đáy nâng cấp"
             title="Thảm lót đáy nâng cấp"
             desc="Thiết kế đặc biệt với khả năng chống dính, chống rò rỉ và chống trầy xước, bảo vệ toàn diện."
-            imageClassName="object-cover w-[250%] max-w-[250%] h-[150%] max-h-[150%] -ml-[25%] -mt-[25%]"
+            imageClassName="scale-[1.1] group-hover:scale-[1.15]"
           />
 
           <BentoCard
