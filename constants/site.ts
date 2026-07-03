@@ -5,10 +5,9 @@
    ============================================================ */
 
 import {
-  Share2,
+  Facebook,
+  Instagram,
   Globe,
-  Video,
-  MessageCircle,
 } from 'lucide-react';
 import type { NavItem, SocialLink, FooterLinkGroup } from '@/types';
 
@@ -57,10 +56,9 @@ export const HERO_CONTENT = {
    -------------------------------- */
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { icon: Share2, href: 'https://facebook.com/helipet', label: 'Facebook' },
-  { icon: Globe, href: 'https://instagram.com/helipet', label: 'Instagram' },
-  { icon: Video, href: 'https://youtube.com/@helipet', label: 'YouTube' },
-  { icon: MessageCircle, href: 'https://zalo.me/helipet', label: 'Zalo' },
+  { icon: Facebook, href: 'https://www.facebook.com/helipet.vn', label: 'Facebook' },
+  { icon: Instagram, href: 'https://www.instagram.com/helipet.vn/', label: 'Instagram' },
+  { icon: Globe, href: 'https://helipet.vn/', label: 'Website' },
 ];
 
 /* --------------------------------
