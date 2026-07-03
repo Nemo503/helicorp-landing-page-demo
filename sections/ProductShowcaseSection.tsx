@@ -78,7 +78,7 @@ export function ProductShowcaseSection() {
             alt="Không gian mở rộng"
             title="Không gian mở rộng"
             desc="Thiết kế Open Top không trần, giúp mèo lớn xoay người thoải mái mà không bị bí bách."
-            imageClassName="scale-[1.3] group-hover:scale-[1.35]"
+            imageClassName="scale-[1.05] group-hover:scale-[1.1]"
           />
 
           <BentoCard

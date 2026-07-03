@@ -37,7 +37,7 @@ export function HowItWorksSection() {
         <img
           src={imgSrc}
           alt="Không còn phải dọn cát mỗi ngày"
-          className="w-full h-full object-cover object-[95%_center] md:object-[center_20%]"
+          className="w-full h-full object-cover object-right md:object-[center_20%] scale-110 origin-right md:scale-100 md:origin-center"
           loading="lazy"
           onError={handleImageError}
         />
