@@ -5,10 +5,9 @@
    ============================================================ */
 
 import {
-  Facebook,
-  Instagram,
   Globe,
 } from 'lucide-react';
+import { FacebookIcon, InstagramIcon } from '@/components/ui/SocialIcons';
 import type { NavItem, SocialLink, FooterLinkGroup } from '@/types';
 
 /* --------------------------------
@@ -56,8 +55,8 @@ export const HERO_CONTENT = {
    -------------------------------- */
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { icon: Facebook, href: 'https://www.facebook.com/helipet.vn', label: 'Facebook' },
-  { icon: Instagram, href: 'https://www.instagram.com/helipet.vn/', label: 'Instagram' },
+  { icon: FacebookIcon as any, href: 'https://www.facebook.com/helipet.vn', label: 'Facebook' },
+  { icon: InstagramIcon as any, href: 'https://www.instagram.com/helipet.vn/', label: 'Instagram' },
   { icon: Globe, href: 'https://helipet.vn/', label: 'Website' },
 ];
 
