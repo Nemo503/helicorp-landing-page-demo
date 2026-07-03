@@ -58,8 +58,8 @@ export const HERO_CONTENT = {
 export const SOCIAL_LINKS: SocialLink[] = [
   { icon: FacebookIcon as any, href: 'https://www.facebook.com/helipet.vn', label: 'Facebook' },
   { icon: InstagramIcon as any, href: 'https://www.instagram.com/helipet.vn/', label: 'Instagram' },
-  { icon: YoutubeIcon as any, href: 'https://youtube.com/@helipet', label: 'YouTube' },
-  { icon: MessageCircle as any, href: 'https://zalo.me/helipet', label: 'Zalo' },
+  { icon: YoutubeIcon as any, href: 'https://www.youtube.com/@helipet', label: 'YouTube' },
+  { icon: MessageCircle as any, href: 'https://zalo.me/0965255227', label: 'Zalo' },
   { icon: Globe as any, href: 'https://helipet.vn/', label: 'Website' },
 ];
 
